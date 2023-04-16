@@ -29,7 +29,7 @@ class Employee {
     }
 
     getSchedule() {
-        console.log(`${this.name} ${this.shifts}`)
+        console.log(`${this.name} works on ${this.shifts}`)
     }
 }
 
@@ -71,6 +71,7 @@ empOne.getSchedule()
 //CODE HERE
 
 const empTwo = {...empOne}
+empTwo.name = 'Nick'
 console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
@@ -104,9 +105,11 @@ class Manager extends Employee {
         super(name, shifts),
         this.employees = employees
     }
+
     getEmployees(){
         console.log(`${this.name} manages ${this.employees}`)
     }
+    
     addEmployee(emp){
         this.employees.push(emp)
     }

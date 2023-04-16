@@ -7,7 +7,6 @@
     creating customer objects.  
 */
 
-
 //////////////////PROBLEM 1////////////////////
 /*  
     Below is a cart array that has food objects
@@ -84,12 +83,12 @@ const calcFinalPrice = (cartTotal, c, tax) => cartTotal*(1 + tax) - c
     TEXT ANSWER HERE
 
     The customer object for the cart page will have five properties:
-    id: 0, Number - to identified uniqueness of the customer if the first name or last name is same for two or more customers
-    firstName: "", String - customer first name for the send discounts
-    lastName: "", String - customer last name for the send discounts
-    email: "", String - customer email, to send the offers like discounts
-    membership: false, Boolean - flag what show if customer has membership
-    discount: 0, Number - % of discount, what customer has
+    id: 0, Number - To identify uniqueness of the customer if the first name or last name is same for two or more customers
+    firstName: "", String - The customer first name 
+    lastName: "", String - The customer last name 
+    email: "", String - The customer email, to send the offers, discounts
+    membership: false/true, Boolean - The flag that show if customer has membership
+    discount: 0, Number - The % of discount, what customer has
 */
 
 /*

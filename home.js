@@ -7,7 +7,6 @@
     page of the restaurant's website.
 */
 
-
 //////////////////PROBLEM 1////////////////////
 /* 
     Write an *arrow* function called `greetUser`
@@ -54,7 +53,7 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 console.log("------------------------------------------------------------------------------Problem 2")
 
 const message = (zipCode, trigger = true) => trigger ? `${zipCode} - You're in our delivery zone!` : `${zipCode} - Sorry, we can't deliver to that address`
-const callDeliveryCheck = (cb, zipCode) => cb(zipCode) ? message(zipCode)  : message(zipCode, false)
+const callDeliveryCheck = (cb, zipCode) => cb(zipCode) ? message(zipCode) : message(zipCode, false)
 const callIncludes = (zipCode) => deliveryAreaZipCodes.includes(zipCode)
 const callFind = (zipCode) => deliveryAreaZipCodes.find(el => el === zipCode)
 
